@@ -1,4 +1,4 @@
-import logoIP from "../assets/brand/logoIP.jpg"
+import logoIP from "../assets/brand/logoIP-removebg.png"
 export const Footer = () => {
   return (
     <>    <section className="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32">
@@ -6,18 +6,20 @@ export const Footer = () => {
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
 
           {/* --- Left Section --- */}
-          <div className="max-w-xl lg:max-w-lg">
-            <img src={logoIP} />
+          <div className="max-w-xl lg:max-w-lg ">
+
             <h2 className="text-4xl font-semibold tracking-tight text-white">
               Consultorio Dental IP
             </h2>
             <p className="mt-4 text-lg text-gray-300">
               “Desde limpiezas rutinarias hasta tratamientos especializados, te acompañamos en cada paso hacia tu mejor sonrisa.”
             </p>
+
+            <div className="flex justify-center pt-10"> <img src={logoIP} className="w-20" /> </div>
           </div>
 
           {/* --- Right Section --- */}
-          <dl className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
+          <dl className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-3 lg:pt-2">
             <div className="flex flex-col items-start">
               <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
                 <svg
@@ -44,12 +46,37 @@ export const Footer = () => {
                 </svg>
               </div>
               <dt className="mt-4 text-base font-semibold text-white">
-                Weekly articles
+                X
               </dt>
-              <dd className="mt-2 text-base/7 text-gray-400">
-                Non laboris consequat cupidatat laborum magna. Eiusmod non irure
-                cupidatat duis commodo amet.
-              </dd>
+            </div>
+            <div className="flex flex-col items-start">
+              <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  aria-hidden="true"
+                  className="size-6 text-white"
+                >
+                  <path
+                    d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 
+                    2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 
+                    2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 
+                    2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 
+                    15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 
+                    15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 
+                    15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 
+                    2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 
+                    2.25h.008v.008H16.5V15Z"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+              <dt className="mt-4 text-base font-semibold text-white">
+                Facebook
+              </dt>
             </div>
 
             <div className="flex flex-col items-start">
@@ -76,11 +103,7 @@ export const Footer = () => {
                   />
                 </svg>
               </div>
-              <dt className="mt-4 text-base font-semibold text-white">No spam</dt>
-              <dd className="mt-2 text-base/7 text-gray-400">
-                Officia excepteur ullamco ut sint duis proident non adipisicing.
-                Voluptate incididunt anim.
-              </dd>
+              <dt className="mt-4 text-base font-semibold text-white">Instagram</dt>
             </div>
           </dl>
         </div>

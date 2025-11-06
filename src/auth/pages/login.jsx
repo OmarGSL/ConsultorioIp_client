@@ -10,7 +10,7 @@ const Login = () => {
           alt="Consultorio IP"
           className="mx-auto h-20 w-auto"
         />
-        <h2 className='text-center text-purple-700 font-bold tracking-tight text-3xl'> Consultorio IP</h2>
+        <h2 className='text-center text-purple-500 font-bold tracking-tight text-3xl'> Consultorio IP</h2>
         <h2 className="mt-10 text-center text-2xl font-bold tracking-tight">
           Ingresa los datos de tu cuenta
         </h2>
@@ -25,7 +25,7 @@ const Login = () => {
               htmlFor="email"
               className="block text-sm font-medium"
             >
-              Email address
+              Correo electromico
             </label>
             <div className="mt-2">
               <input
@@ -46,7 +46,7 @@ const Login = () => {
                 htmlFor="password"
                 className="block text-sm font-medium"
               >
-                Password
+                Contraseña
               </label>
               <div className="text-xs">
                 <a
