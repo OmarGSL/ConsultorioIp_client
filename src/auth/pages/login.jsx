@@ -25,7 +25,7 @@ const Login = () => {
               htmlFor="email"
               className="block text-sm font-medium"
             >
-              Correo electromico
+              Correo electronico
             </label>
             <div className="mt-2">
               <input
@@ -34,7 +34,7 @@ const Login = () => {
                 name="email"
                 required
                 autoComplete="email"
-                className="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm"
+                className="block w-full rounded-md bg-black/5 px-3 py-1.5 text-base outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm"
               />
             </div>
           </div>
@@ -64,7 +64,7 @@ const Login = () => {
                 name="password"
                 required
                 autoComplete="current-password"
-                className="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm"
+                className="block w-full rounded-lg bg-black/5 px-3 py-1.5 text-base outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm"
               />
             </div>
           </div>

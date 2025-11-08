@@ -54,7 +54,7 @@ export const ClinicServices = () => {
                                 <div className="absolute top-0 left-0 flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-600">
                                     <img src={amalgama} alt="Logo Consultorio" className="w-7 h-auto invert" />
                                 </div>
-                                Almagamas
+                                Endodoncia
                             </dt>
                         </div>
                         <div className="relative pl-16">
