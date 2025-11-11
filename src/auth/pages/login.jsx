@@ -1,6 +1,27 @@
+import { useState } from 'react';
 import logoIP from '../../assets/brand/logoIP.jpg'
 
+const dataLogin = {
+    email: "",
+    password: "",
+  }
 const Login = () => {
+  const [loginForm, setLoginForm] = useState(dataLogin);
+
+
+  const onChangeFormLogin = ({ target }) => {
+    console.log(target.value);
+    const {name, value} = target;
+    setLoginForm({
+      ...loginForm,
+      [name]: value,
+    })
+  }
+  const onSubmitLoginForm = (e) =>{
+    e.preventDefault();
+    console.log(loginForm);
+  }
+
   return (
     <div className="flex min-h-full flex-col justify-center text-black px-10 pt-28 lg:px-8 bg-white-900">
       {/* LOGO */}
@@ -18,7 +39,7 @@ const Login = () => {
 
       {/* FORMULARIO */}
       <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-        <form className="space-y-6">
+        <form className="space-y-6" onSubmit={onSubmitLoginForm}>
           {/* EMAIL */}
           <div>
             <label
@@ -29,6 +50,7 @@ const Login = () => {
             </label>
             <div className="mt-2">
               <input
+                onChange={onChangeFormLogin}
                 id="email"
                 type="email"
                 name="email"
@@ -62,6 +84,7 @@ const Login = () => {
                 id="password"
                 type="password"
                 name="password"
+                onChange={onChangeFormLogin}
                 required
                 autoComplete="current-password"
                 className="block w-full rounded-lg bg-black/5 px-3 py-1.5 text-base outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm"
